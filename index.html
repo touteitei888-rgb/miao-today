@@ -2,36 +2,14 @@
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/miao-today/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#FFF8F3" />
     <title>Miao Today · 让远方的父母，每天都有回应</title>
-    <script type="module" crossorigin src="./assets/index-CYHBSW0J.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DLPBztBL.css">
+    <script type="module" crossorigin src="/miao-today/assets/index-5RTRbj2l.js"></script>
+    <link rel="stylesheet" crossorigin href="/miao-today/assets/index-DLPBztBL.css">
   </head>
   <body>
     <div id="root"></div>
-  <script>
-    (function() {
-      var observer = new MutationObserver(function() {
-        var els = document.querySelectorAll('*');
-        for (var i = 0; i < els.length; i++) {
-          var el = els[i];
-          if (el.children.length === 0 && el.textContent.includes('云养猫报平安')) {
-            el.textContent = el.textContent.replace(/云养猫报平安/g, '小猫今天好');
-          }
-        }
-      });
-      observer.observe(document.body, { childList: true, subtree: true });
-      // Also run once immediately
-      var els = document.querySelectorAll('*');
-      for (var i = 0; i < els.length; i++) {
-        var el = els[i];
-        if (el.children.length === 0 && el.textContent.includes('云养猫报平安')) {
-          el.textContent = el.textContent.replace(/云养猫报平安/g, '小猫今天好');
-        }
-      }
-    })();
-  </script>
   </body>
 </html>
