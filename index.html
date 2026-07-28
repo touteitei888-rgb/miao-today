@@ -11,5 +11,27 @@
   </head>
   <body>
     <div id="root"></div>
+  <script>
+    (function() {
+      var observer = new MutationObserver(function() {
+        var els = document.querySelectorAll('*');
+        for (var i = 0; i < els.length; i++) {
+          var el = els[i];
+          if (el.children.length === 0 && el.textContent.includes('云养猫报平安')) {
+            el.textContent = el.textContent.replace(/云养猫报平安/g, '小猫今天好');
+          }
+        }
+      });
+      observer.observe(document.body, { childList: true, subtree: true });
+      // Also run once immediately
+      var els = document.querySelectorAll('*');
+      for (var i = 0; i < els.length; i++) {
+        var el = els[i];
+        if (el.children.length === 0 && el.textContent.includes('云养猫报平安')) {
+          el.textContent = el.textContent.replace(/云养猫报平安/g, '小猫今天好');
+        }
+      }
+    })();
+  </script>
   </body>
 </html>
